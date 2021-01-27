@@ -13,6 +13,7 @@
 
   <body>
     <header>
+      <h3>💎  🖐🏻  💎 🖐🏿 💎 🖐🏽  💎  🖐🏼 💎 🖐🏻 💎 🖐🏿 💎 🖐🏻 💎 🖐🏽 💎 🖐🏼 💎 🖐🏿 💎 🖐🏻 💎 🖐🏿 💎 </h3>
       <h1>
         WE LIKE THE STOCK
       </h1>
@@ -21,27 +22,42 @@
       <div class="gainz-calc" >
           <h2>How much wealth will YOU transfer from Melvin?</h2>
           <div class="input-group" >
-            <label>
+            <label for="stocks">
               You bought
             </label>
-            <input type="number">
-            <label>
-              at
+            <input type="number" id="stocks" placeholder="number of GME stocks">
+            <label for="price">
+              shares at
             </label>
-            <input type="number">
+            <input type="number" id="price" placeholder="price at time of purchase">
             dollars.
+            <button id="calculate">CALCULATE</button>
           </div>
           <div class="results" >
-            <p>🚀 WHEN GME HITS 1000 🚀</p>
+            <p><span class="wiggle">🚀</span> WHEN GME HITS 1000 <span class="wiggle">🚀</span></p>
             <p>YOU WILL RIP</p>
-              <p>
-                <span class="wealth">0</span>
+              <p class="wealth">
+                <span id="wealth">0</span>
                 DOLLARS
               </p>
             <p>DIRECTLY FROM THE HANDS OF WALL STREET<p>
           </div>
+          <h3>💎  🖐🏻  💎 🖐🏿 💎 🖐🏽  💎  🖐🏼 💎 🖐🏻 💎 🖐🏿 💎 🖐🏻 💎 🖐🏽 💎 🖐🏼 💎 🖐🏿 💎 🖐🏻 💎 🖐🏿 💎 </h3>
       </div>
+      <footer>
+        <p>
+          This shitty website was built in about 20 minutes by <a href="https://www.calebjay.com">Caleb Jay Rogers</a>, software engineer.
+        </p>
+        <p>
+          If you want to make it better, issue a PR on
+          <a href="https://github.com/komali2/rocket.diamonds">Github</a>.
+        </p>
+        <p>
+          I have <a href="https://blog.calebjay.com">a blog</a> too. None of this shit is monetized so idk wtf I'm doing.
+        </p>
+      </footer>
     </main>
+    <script async src="gainzcomputer.js" ></script>
     <script data-goatcounter="https://rocket-diamonds.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
   </body>
