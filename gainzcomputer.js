@@ -9,11 +9,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let priceValue = 0;
 
   countInput.addEventListener('input', handleCountInput);
+  countInput.addEventListener('change', handleCountInput);
   priceInput.addEventListener('input', handlePriceInput);
+  priceInput.addEventListener('change', handlePriceInput);
   calculateButton.addEventListener('click', calculateAll);
   calculateButton.addEventListener('touchstart', calculateAll);
 
   function calculateAll() {
+    console.log('hi ');
     handleCountInput();
     handlePriceInput();
   }
